@@ -1,7 +1,7 @@
 # This will produce a array of image list.
 np_image_list = np.array(image_list, dtype=np.float16) / 225.0
 
-# Test_Train Split applied
+# Test_Train Split applied.
 print("[INFO] Spliting data to train, test")
 x_train, x_test, y_train, y_test = train_test_split(np_image_list, image_labels, test_size=0.2, random_state = 42) 
 
