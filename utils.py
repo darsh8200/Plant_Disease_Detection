@@ -76,6 +76,7 @@ except Exception as e:
     print(f"Error : {e}")
 
 # This will labelize the different 15 classses.
+# If used print(label_binarizer.classes_) it will print out the 15 classes of classification.
 label_binarizer = LabelBinarizer()
 image_labels = label_binarizer.fit_transform(label_list)
 pickle.dump(label_binarizer,open('label_transform.pkl', 'wb'))
